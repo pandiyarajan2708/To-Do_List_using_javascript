@@ -1,0 +1,81 @@
+.btn1{
+
+    width: 36px;
+    height: 36px;
+    margin-left: 10px;
+    background-color:rgb(9, 237, 245);
+}
+img{
+    width:15px;
+    height:15px;
+
+}
+
+body{
+    background-color: aquamarine;
+    color: black;
+}
+.btn1:hover{
+    background-color: rgb(232, 174, 243);
+}
+input{
+
+    width: 500px;
+    height: 30px;
+}
+
+#items{
+    margin-top: 50px;
+}
+
+/* Style for each to-do item div */
+.item {
+    background-color:rgb(61, 255, 239);
+    padding-right: 10px;
+    border: 1px solid black;
+    border-radius: 1px;
+    display:flex;
+    width: 500px;
+    height: 30px;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    transition: height 0.3s ease;
+}
+
+/* Style for the item text */
+.item span {
+    flex-grow: 1;
+    margin-right: 10px;
+}
+
+.remove {
+    /* background-color: #ff5050; */
+    color: rgb(10, 10, 10);
+    border: none;
+    background-color: transparent;
+    width: 25px;
+    height: 25px;
+    /* border-radius: 50%; */
+    /* padding: 5px 10px; */
+    cursor: pointer;
+}
+
+.item:not(.item-clicked):hover{
+    
+    height: 40px;
+    box-shadow: 0 5px 10px 0px #080808;
+    
+}
+.item:is(.item-clicked):hover{
+    
+    height: 40px;
+    box-shadow: 0 5px 10px 0px #080808;
+    background-color:green;
+    
+}
+
+.item-clicked{
+    background-color: green;
+}
+
