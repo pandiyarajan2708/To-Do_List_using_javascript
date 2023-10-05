@@ -14,10 +14,12 @@ function addList() {
         const itemText = document.createElement("span");
         itemText.textContent = newItemText;
 
+        const removeButton = document.createElement("button")
         removeButton.textContent = "X";
         removeButton.classList.add("remove"); 
 
         removeButton.addEventListener("click", () => {
+            itemList.removeChild(newItemDiv);
         });
 
         newItemDiv.appendChild(itemText);
